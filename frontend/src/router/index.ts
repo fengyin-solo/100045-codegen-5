@@ -3,6 +3,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import Dashboard from '@/views/Dashboard.vue'
 const Plant = () => import('@/views/plant/index.vue')
 const Inflow = () => import('@/views/inflow/index.vue')
+const Overflow = () => import('@/views/overflow/index.vue')
 const Effluent = () => import('@/views/effluent/index.vue')
 const Aeration = () => import('@/views/aeration/index.vue')
 const Dosing = () => import('@/views/dosing/index.vue')
@@ -26,6 +27,7 @@ const router = createRouter({
     { path: '/', name: 'dashboard', component: Dashboard },
     { path: '/plant', name: 'plant', component: Plant },
     { path: '/inflow', name: 'inflow', component: Inflow },
+    { path: '/overflow', name: 'overflow', component: Overflow },
     { path: '/effluent', name: 'effluent', component: Effluent },
     { path: '/aeration', name: 'aeration', component: Aeration },
     { path: '/dosing', name: 'dosing', component: Dosing },

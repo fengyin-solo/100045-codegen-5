@@ -33,3 +33,77 @@ body { margin: 0; background: #f6f8fb; color: #1f2937; }
 .link { border: none; background: none; color: var(--brand); cursor: pointer; padding: 0; }
 .page-foot { display: flex; justify-content: space-between; margin-top: 8px; font-size: 12px; color: var(--muted); }
 .error-text { color: #b42318; }
+.ok-text { color: #027a48; }
+
+/* 雨天溢流与调蓄池看板 */
+.filter-item.grow { flex: 1; min-width: 220px; }
+.filter-item select, .filter-item input { padding: 5px 8px; border: 1px solid var(--border); border-radius: 6px; font-size: 13px; min-width: 150px; }
+.filter-item.grow input { width: 100%; }
+.stat-card.stat-danger { border-color: #f04438; background: #fff5f4; }
+.stat-card.stat-warn { border-color: #f79009; background: #fffaeb; }
+.stat-card.stat-doing { border-color: var(--brand); background: #eff6ff; }
+.board-banner { display: flex; justify-content: space-between; align-items: center; border: 1px solid #f04438; background: #fff5f4; color: #b42318; border-radius: 8px; padding: 8px 12px; margin-bottom: 12px; font-size: 13px; }
+.board-section { background: transparent; margin-bottom: 20px; }
+.section-title { font-size: 15px; margin: 0 0 10px; display: flex; align-items: baseline; gap: 10px; }
+.section-sub { font-size: 12px; color: var(--muted); font-weight: 400; }
+.site-group { background: #fff; border: 1px solid var(--border); border-radius: 10px; padding: 12px; margin-bottom: 14px; }
+.site-head { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-bottom: 10px; font-size: 13px; }
+.site-meta { display: inline-flex; gap: 6px; }
+.site-progress { color: var(--muted); font-size: 12px; margin-left: auto; }
+.chip { display: inline-block; border-radius: 999px; padding: 1px 8px; font-size: 12px; border: 1px solid transparent; }
+.chip-danger { background: #fff1f0; color: #b42318; border-color: #fda29b; }
+.chip-warn { background: #fffaeb; color: #b54708; border-color: #fec84b; }
+.chip-failed { background: #f4f3ff; color: #5925dc; border-color: #bdb4fe; }
+.chip-empty { background: #f2f4f7; color: #475467; border-color: #d0d5dd; }
+.chip-normal { background: #ecfdf3; color: #027a48; border-color: #6ce9a6; }
+.tank-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 12px; }
+.tank-card { border: 1px solid var(--border); border-left-width: 4px; border-radius: 8px; padding: 10px 12px; background: #fff; }
+.tank-card.grade-danger { border-left-color: #f04438; background: #fff8f7; }
+.tank-card.grade-warn { border-left-color: #f79009; background: #fffdf5; }
+.tank-card.grade-failed { border-left-color: #7a5af8; background: #faf9ff; }
+.tank-card.grade-empty { border-left-color: #98a2b3; background: #fafbfc; }
+.tank-card.grade-normal { border-left-color: #12b76a; }
+.tank-site-tag { font-size: 11px; color: var(--muted); margin-bottom: 4px; }
+.tank-name { font-size: 14px; font-weight: 600; }
+.tank-no { font-size: 11px; color: var(--muted); }
+.tank-level { margin: 6px 0 2px; }
+.tank-level strong { font-size: 26px; }
+.level-unit { color: var(--muted); margin-left: 2px; }
+.level-na { font-size: 22px; color: #98a2b3; }
+.tank-thresholds { font-size: 11px; color: var(--muted); }
+.level-track { height: 6px; border-radius: 999px; background: #eaecf0; margin: 8px 0 6px; overflow: hidden; }
+.level-fill { height: 100%; border-radius: 999px; background: #12b76a; }
+.level-fill.fill-warn { background: #f79009; }
+.level-fill.fill-danger { background: #f04438; }
+.level-fill.fill-failed, .level-fill.fill-empty { background: #98a2b3; width: 12% !important; }
+.grade-tag { display: inline-block; border-radius: 4px; padding: 1px 8px; font-size: 12px; font-weight: 600; }
+.grade-tag.grade-danger { background: #f04438; color: #fff; }
+.grade-tag.grade-warn { background: #f79009; color: #fff; }
+.grade-tag.grade-failed { background: #7a5af8; color: #fff; }
+.grade-tag.grade-empty { background: #98a2b3; color: #fff; }
+.grade-tag.grade-normal { background: #e6f7ee; color: #027a48; }
+.tank-hint { font-size: 12px; color: #475467; margin: 6px 0 4px; line-height: 1.5; }
+.tank-time, .tank-last { font-size: 11px; color: var(--muted); }
+.report-form { display: flex; flex-direction: column; gap: 6px; margin-top: 8px; }
+.report-form input { border: 1px solid var(--border); border-radius: 6px; padding: 4px 8px; font-size: 12px; }
+.form-error { font-size: 12px; color: #b42318; }
+.btn.mini { padding: 3px 10px; font-size: 12px; align-self: flex-start; margin-top: 6px; }
+.btn.warning { border-color: #7a5af8; color: #5925dc; }
+.btn.primary.mini { border-color: var(--brand); }
+.mini-link { font-size: 12px; margin-left: 8px; }
+.board-empty { text-align: center; color: var(--muted); border: 1px dashed var(--border); border-radius: 8px; padding: 24px; background: #fff; }
+.status-tag { border-radius: 4px; padding: 1px 8px; font-size: 12px; }
+.status-pending { background: #fee4e2; color: #b42318; }
+.status-doing { background: #d1e9ff; color: #175cd3; }
+.status-done { background: #d1fadf; color: #027a48; }
+.progress-note { max-width: 220px; }
+.action-done { color: var(--muted); font-size: 12px; }
+.modal-mask { position: fixed; inset: 0; background: rgba(16, 24, 40, 0.45); display: flex; align-items: center; justify-content: center; z-index: 50; }
+.modal { background: #fff; border-radius: 10px; padding: 18px 20px; width: 420px; max-width: calc(100vw - 32px); max-height: calc(100vh - 48px); overflow: auto; }
+.modal h3 { margin: 0 0 10px; font-size: 16px; }
+.modal-tip { font-size: 12px; color: var(--muted); margin: 0 0 10px; }
+.modal-error { background: #fff5f4; border: 1px solid #fda29b; color: #b42318; border-radius: 6px; padding: 6px 10px; font-size: 12px; margin-bottom: 10px; }
+.modal-field { display: block; margin-bottom: 10px; }
+.modal-field span { display: block; font-size: 12px; color: var(--muted); margin-bottom: 4px; }
+.modal-field input, .modal-field textarea { width: 100%; border: 1px solid var(--border); border-radius: 6px; padding: 6px 8px; font-size: 13px; font-family: inherit; }
+.modal-actions { display: flex; justify-content: flex-end; gap: 8px; margin-top: 6px; }
