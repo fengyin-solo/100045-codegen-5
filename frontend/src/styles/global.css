@@ -33,3 +33,43 @@ body { margin: 0; background: #f6f8fb; color: #1f2937; }
 .link { border: none; background: none; color: var(--brand); cursor: pointer; padding: 0; }
 .page-foot { display: flex; justify-content: space-between; margin-top: 8px; font-size: 12px; color: var(--muted); }
 .error-text { color: #b42318; }
+
+/* 雨天溢流与调蓄池看板 */
+.board-controls { display: flex; flex-wrap: wrap; gap: 10px; align-items: flex-end; margin-bottom: 12px; }
+.board-controls .filter-item span { display: block; font-size: 12px; color: var(--muted); }
+.board-controls select, .board-controls input { border: 1px solid var(--border); border-radius: 6px; padding: 6px 8px; font-size: 13px; background: #fff; }
+.board-section-title { margin: 16px 0 8px; font-size: 15px; }
+.site-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 12px; }
+.site-card { background: #fff; border: 1px solid var(--border); border-left-width: 4px; border-radius: 8px; padding: 10px 12px; }
+.site-card.level-normal { border-left-color: #16a34a; }
+.site-card.level-warning { border-left-color: #d97706; }
+.site-card.level-alarm { border-left-color: #dc2626; }
+.site-card.data-failed { border-left-color: #b45309; }
+.site-card.data-nodata { border-left-color: #94a3b8; }
+.site-card .site-name { font-weight: 600; font-size: 14px; }
+.site-card .site-code { color: var(--muted); font-size: 12px; margin-left: 6px; }
+.level-badge { display: inline-block; border-radius: 999px; padding: 1px 8px; font-size: 12px; margin-left: 6px; color: #fff; }
+.level-badge.normal { background: #16a34a; }
+.level-badge.warning { background: #d97706; }
+.level-badge.alarm { background: #dc2626; }
+.level-badge.failed { background: #b45309; }
+.level-badge.nodata { background: #94a3b8; }
+.level-bar { position: relative; height: 8px; border-radius: 999px; background: #e5e7eb; margin: 8px 0 4px; overflow: hidden; }
+.level-bar > span { position: absolute; inset: 0 auto 0 0; border-radius: 999px; }
+.level-bar > span.normal { background: #16a34a; }
+.level-bar > span.warning { background: #d97706; }
+.level-bar > span.alarm { background: #dc2626; }
+.level-bar > span.unknown { background: #94a3b8; }
+.site-meta { font-size: 12px; color: var(--muted); margin-top: 4px; }
+.site-tip { font-size: 12px; color: #b45309; margin-top: 6px; line-height: 1.5; }
+.progress-cell { min-width: 140px; }
+.progress-track { height: 8px; border-radius: 999px; background: #e5e7eb; overflow: hidden; }
+.progress-track > span { display: block; height: 100%; background: var(--brand); border-radius: 999px; }
+.status-pill { display: inline-block; border-radius: 999px; padding: 1px 8px; font-size: 12px; background: #eef2ff; color: #3730a3; }
+.create-panel { background: #fff; border: 1px solid var(--border); border-radius: 8px; padding: 12px 14px; margin-bottom: 12px; }
+.create-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 10px; }
+.create-grid label span { display: block; font-size: 12px; color: var(--muted); margin-bottom: 2px; }
+.create-grid input, .create-grid select, .create-grid textarea { width: 100%; border: 1px solid var(--border); border-radius: 6px; padding: 6px 8px; font-size: 13px; }
+.create-grid .full { grid-column: 1 / -1; }
+.form-message { margin-top: 8px; font-size: 13px; }
+.form-message.ok { color: #15803d; }

@@ -4,6 +4,7 @@ import Dashboard from '@/views/Dashboard.vue'
 const Plant = () => import('@/views/plant/index.vue')
 const Inflow = () => import('@/views/inflow/index.vue')
 const Effluent = () => import('@/views/effluent/index.vue')
+const Overflow = () => import('@/views/overflow/index.vue')
 const Aeration = () => import('@/views/aeration/index.vue')
 const Dosing = () => import('@/views/dosing/index.vue')
 const Sludge = () => import('@/views/sludge/index.vue')
@@ -27,6 +28,7 @@ const router = createRouter({
     { path: '/plant', name: 'plant', component: Plant },
     { path: '/inflow', name: 'inflow', component: Inflow },
     { path: '/effluent', name: 'effluent', component: Effluent },
+    { path: '/overflow', name: 'overflow', component: Overflow },
     { path: '/aeration', name: 'aeration', component: Aeration },
     { path: '/dosing', name: 'dosing', component: Dosing },
     { path: '/sludge', name: 'sludge', component: Sludge },

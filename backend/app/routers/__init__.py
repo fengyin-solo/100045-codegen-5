@@ -24,5 +24,6 @@ from app.routers import alarm as router_alarm
 from app.routers import maint as router_maint
 from app.routers import permit as router_permit
 from app.routers import audit as router_audit
+from app.routers import overflow as router_overflow
 
-ROUTERS = [router_plant, router_inflow, router_effluent, router_aeration, router_dosing, router_sludge, router_dewater, router_pump, router_blower, router_membrane, router_online, router_sample, router_chemical, router_energy, router_alarm, router_maint, router_permit, router_audit]
+ROUTERS = [router_plant, router_inflow, router_effluent, router_aeration, router_dosing, router_sludge, router_dewater, router_pump, router_blower, router_membrane, router_online, router_sample, router_chemical, router_energy, router_alarm, router_maint, router_permit, router_audit, router_overflow]
